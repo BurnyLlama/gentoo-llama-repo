@@ -3,10 +3,12 @@
 #
 # Modified by BurnyLlama to support gui-apps/rofi-wayland::guru
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{9..12} )
 DISTUTILS_USE_PEP517=poetry
+ DISTUTILS_USE_SETUPTOOLS=RDEPEND
+
 inherit distutils-r1
 
 DESCRIPTION="Emoji, unicode and general character picker for rofi and rofi-likes"
